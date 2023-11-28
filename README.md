@@ -1,3 +1,3 @@
 # Testing Tasks
-QA Automation Practice 
+QA Automation Practice                              
 Here I have collected my examples for auto testing.
