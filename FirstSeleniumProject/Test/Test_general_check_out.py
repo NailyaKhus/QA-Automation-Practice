@@ -2,6 +2,7 @@ import utils
 
 _base_url = "https://www.amazon.com/"
 item = 'socks'
+item_index = 1
 
 # checking test for the Main page
 def test_page_loaded():
@@ -11,11 +12,16 @@ def test_page_loaded():
 # cheching products
 # searching the product
 def test_item_name_in_title():
-    assert item in utils.item_searching(_base_url,item)
+    title_text, img_is_callable = utils.item_title_and_img(_base_url,item,item_index)
+    assert item in title_text
+    assert img_is_callable == 1
 
-# image is on the page of item
-def test_active_img_on_item_page():
-    assert utils.img_on_item_page(_base_url,item) == 1
+# Add to cart
+def test_add_to_cart():
+    item_num_in_cart, added_item_id, in_cart_item_id = utils.press_add_to_cart(_base_url,item,item_index)
+    assert item_num_in_cart == 1
+    assert added_item_id == in_cart_item_id
+
 
 
 
