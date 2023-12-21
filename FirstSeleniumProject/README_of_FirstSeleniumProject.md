@@ -14,7 +14,7 @@ The first is [Test_general_check_out.py](https://github.com/NailyaKhus/QA-Automa
 - Saving the item's id and pressing to the 'Add to Cart' button and Checking that there is the only item in the Cart                                     
 - The id of the item in the Cart is equal to the added item's id.                    
                                       
-The second is [Test_negative_testing.py](https://github.com/NailyaKhus/QA-Automation-Practice/blob/main/FirstSeleniumProject/Test/Test_negative_testing.py) which negative testing of signing-in:                                       
+The second is [Test_negative_testing.py](https://github.com/NailyaKhus/QA-Automation-Practice/blob/main/FirstSeleniumProject/Test/Test_negative_testing.py) which contains the negative testing of signing-in:                                       
 - Through fail emails                                     
 - Through fail phone numbers.
 
