@@ -1,4 +1,4 @@
-from my_funcs.utils import division
+from utils import division
 import pytest
 
 @pytest.mark.parametrize("a, b, expected_result", [(10,2,5),
