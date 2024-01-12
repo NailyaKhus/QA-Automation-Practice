@@ -37,5 +37,27 @@ In the **Test** folder, there are two Python files:
 2. [Test_negative_testing.py](https://github.com/NailyaKhus/QA-Automation-Practice/blob/main/FirstSeleniumProject/Test/Test_negative_testing.py) Contains negative tests for signing in with:                                       
 - Invalid emails                                     
 - Invalid phone numbers.
+                                                
 
+### 4_API_testing Folder - Testing API Using Pytest                                                  
+                                           
+In the [utils.py](https://github.com/NailyaKhus/QA-Automation-Practice/blob/main/4_API_testing/utils.py) file, you'll find functions used in the testing.                                             
+                                                           
+In the **Test** folder, there are two Python files:                                
 
+1. [test_positive_testing.py](https://github.com/NailyaKhus/QA-Automation-Practice/blob/main/4_API_testing/tests/test_positive_testing.py) Contains tests for:                                   
+- GET requests:                                        
+    - correct status_code                                          
+    - response data is not empty                                       
+    - there are expected product features on the product page                                   
+- POST requests:                                         
+    - valid users can login                                   
+    - request for create user assigns id for new created user                                  
+- PUT request:                                       
+    - update user data through put request                                             
+- PATCH request:                                       
+    - partial update user data through patch request                                             
+                                             
+2. [test_negative_testing.py](https://github.com/NailyaKhus/QA-Automation-Practice/blob/main/4_API_testing/tests/test_negative_testing.py) Contains negative tests for:                                  
+- GET request: invalid product url                               
+- POST request: invalid product body                                     
