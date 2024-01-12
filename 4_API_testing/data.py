@@ -30,3 +30,7 @@ PRODUCT_BODY = {'title': 'some_product',
                 'description': 'item for kitchen',
                 'image': 'https://whatever.net',
                 'category': 'electronic'}
+
+INCORRECT_PRODUCT_URI_LIST = ["0","-1", "o", "!", "1.1"]
+
+INCORRECT_PRODUCT_BODY_LIST = ["", {}, "NaN", "Hi, how are you?", {'NaN'}, {"NaN": "NaN"}]
