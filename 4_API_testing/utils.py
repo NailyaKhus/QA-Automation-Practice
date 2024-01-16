@@ -10,15 +10,8 @@ def request_post(url, body):
 
 def request_put(url, body):
     response = requests.put(url, body)
-    return [*response.json()]
+    return response
 
 def request_patch(url, body):
     response = requests.patch(url, body)
-    return [*response.json()]
-
-
-# url = "https://fakestoreapi.com/products/1"
-# body = ''
-# response = requests.post(url, body)
-# # print(response.json())
-# print(response)
+    return response
